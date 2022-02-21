@@ -9,6 +9,8 @@ class Timer():
 
     def __init__(self):
         self.init = datetime.now()
+	self.start_times = {}
+	self.end_times = {}
 
     def __repr__(self):
         diff = (datetime.now() - self.init).total_seconds()*1000
